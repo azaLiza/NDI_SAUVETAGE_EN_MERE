@@ -1,8 +1,17 @@
-Drop table Sauveteur;
-Drop table BateauSauveteur;
-Drop table Medaille;
-Drop table Sauvé;
-Drop table BateauSauvé;
+use database webSauvetage;
+
+Drop table if exists Sauveteur;
+Drop table if exists BateauSauveteur;
+Drop table if exists Medaille;
+Drop table if exists Sauvé;
+Drop table if exists BateauSauvé;
+
+Create table Utilisateur(
+    pseudo Varchar(20),
+    mail Varchar(20),
+    motDePasse Varchar(20),
+    access Number(1) DEFAULT 1, -- 0 Admin /  1 User
+);
 
 create table Sauveteur(
     nomSauveteur Varchar(20),
