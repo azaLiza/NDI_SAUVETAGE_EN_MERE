@@ -10,16 +10,16 @@ Create table Utilisateur(
     pseudo Varchar(20),
     mail Varchar(20),
     motDePasse Varchar(20),
-    access Number(1) DEFAULT 1, -- 0 Admin /  1 User
+    access numeric(1) DEFAULT 1, -- 0 Admin /  1 User
 );
 
 create table Sauveteur(
     nomSauveteur Varchar(20),
     prenomSauveteur Varchar(20),
     roleSauveteur Varchar(20),
-    nbPersonneSauvé Number(4),
-    nbEquipageSauvé Number(3),
-    nbSortiMer Number(3),
+    nbPersonneSauvé numeric(4),
+    nbEquipageSauvé numeric(3),
+    nbSortiMer numeric(3),
     constraint CleSauveteur PRIMARY KEY(nomSauveteur,prenomSauveteur)
 );
 
