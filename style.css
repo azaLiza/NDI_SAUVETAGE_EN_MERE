@@ -1,0 +1,15 @@
+body {
+    border: solid;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+.buttonposition {
+    text-align: center;
+}
